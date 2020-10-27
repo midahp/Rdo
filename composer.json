@@ -1,7 +1,7 @@
 {
     "name": "horde/rdo",
     "description": "ORM (object relational-mapping) library",
-    "type": "library",
+    "type": "horde-library",
     "homepage": "https://www.horde.org/libraries/Horde_Rdo",
     "license": "LGPL-2.1",
     "authors": [
@@ -12,25 +12,22 @@
         }
     ],
     "version": "2.1.1",
-    "time": "2017-11-11",
+    "time": "2020-10-27",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Db": "^2",
-        "pear-pear.horde.org/Horde_Exception": "^2",
-        "pear-pear.horde.org/Horde_Util": "^2"
+        "horde/db": "dev-master",
+        "horde/exception": "dev-master",
+        "horde/util": "dev-master"
     },
     "suggest": {
-        "pear-pear.horde.org/Horde_Test": "^2.1"
-    },
-    "replace": {
-        "pear-pear.horde.org/Horde_Rdo": "2.*",
-        "pear-horde/Horde_Rdo": "2.*"
+        "horde/test": "^2.1"
     },
     "autoload": {
         "psr-0": {
